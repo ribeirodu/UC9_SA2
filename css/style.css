@@ -9,6 +9,10 @@ header{
     height: 130px;
 }
 
+body{
+    background-color: #3b414b;
+}
+
 .container-grid{
     width: 1200px;
     height: 100%;
@@ -34,15 +38,137 @@ header{
 
 .banner{
     height: 650px;
-    background-image: url(../img/Banner_01.png);
+    background-image: url(../img/banners/Banner_01.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.texto-banner{
+.texto-banner h1{
     color: #FFFFFF;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.texto-banner{
+    width: 495px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
 }
 
 .posicao-texto{
     justify-content: flex-end;
+}
+
+.texto-banner a{
+    background-color: #6c7178;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.texto-banner p{
+    margin-bottom: 50px;
+}
+
+.secao-sobre{
+    background-color: #3b414b;
+    padding: 20px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-sobre {
+    background-color: #6c7178;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.atualizacoes{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.noticia a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-imagem img{
+    width: 382px;
+}
+
+.secao-galeria{
+    background-color: #3b414b;
+}
+
+.galeria{
+    background-color: #3b414b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria img{
+    padding: 0px;
+    width: 382px;
+}
+
+.barras{
+    width: 50px;
+    display: none;
+}
+
+.posicionamento.header{
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 90%;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        size: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        color: blue;
+    }
+    .barras{
+        display: inline-block;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 280px;
+        position: absolute;
+        top: 0;
+        right: 60px;
+        background-color: #000000;
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+    }
+
 }
