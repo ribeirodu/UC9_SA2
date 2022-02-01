@@ -80,17 +80,23 @@ body{
 }
 
 .conteudo-sobre {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .texto-sobre {
     background-color: #6c7178;
+    width: 860px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: #FFFFFF;
     text-decoration: none;
     padding: 20px;
+    margin-right: 30px;
+    /* background: var(--gradiente);
+    box-shadow: 5px 5px 10px #000000,  10px 10px 20px #00000080; */
+    box-shadow: 5px 5px 5px #0000003f;
 }
 
 .atualizacoes{
@@ -109,24 +115,40 @@ body{
     font-weight: bold;
 }
 
-.container-imagem img{
-    width: 382px;
+.imgpromo img{
+    width: 400px;
+    height: 470px; 
+   
 }
 
 .secao-galeria{
     background-color: #3b414b;
+    display: flex;
+}
+
+.concurso{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0px;
+    line-height: 50%;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .galeria{
-    background-color: #3b414b;
+    /* background-color: #3b414b; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .galeria img{
-    padding: 0px;
-    width: 382px;
+    /* padding: 0px; */
+    width: 410px;
+    margin-bottom: 20px;
 }
 
 .barras{
@@ -138,6 +160,96 @@ body{
     position: relative;
 }
 
+.secao-footer{
+    background-color: #6c7178;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 18px;
+    line-height: 70%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.footerLink a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 0%;
+}
+
+.newsletter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.newsletter input[type="email"]{
+    height: 25px;
+    width: 170px;
+    padding: 3px;
+}
+
+.newsltter input[type="email"]::placeholder{
+    color: #3b414b;
+    font-weight: bold;
+}
+
+button{
+    height: 25px;
+    padding: 2px 10px;
+    border: 2px solid #3b414b;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #3b414b;
+    color: #FFFFFF;
+}
+
+.fbBox{
+    padding: 0px;
+    width: 300px;
+}
+
+.socialIcon{
+    padding: 10px;
+    width: 70px;
+}
+
+.legal{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding:20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.legalLinks{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legal a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Ajustar para tablet */
 @media screen and (max-width: 1200px) {
     .container-grid{
         width: 90%;
@@ -150,6 +262,8 @@ body{
     }
 }
 
+
+/* Ajustar para smartphone */
 @media screen and (max-width: 768px) {
     h1{
         color: blue;
