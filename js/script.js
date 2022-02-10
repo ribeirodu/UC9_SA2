@@ -72,6 +72,24 @@ function enviarNewsletter(){
     console.log(emailDigitado)
 }
 
+// function enviarLogin(){
+//     let logEmail = document.getElementById("campo-log-email");
+//     let logEmailDigitado = logEmail.value;
+//     console.log(logEmailDigitado)
+//     let logSenha = document.getElementById("campo-log-senha");
+//     let logEmailDigitado = logSenha.value;
+//     console.log(logEmailDigitado)
+// }
+
+function enviarCadastrar(){
+    let cadEmail = document.getElementById("campo-cad-email");
+    let cadEmailDigitado = cadEmail.value;
+    console.log(cadEmailDigitado)
+    let cadSenha = document.getElementById("campo-cad-senha");
+    let cadSenhaDigitado = cadSenha.value;
+    console.log(cadSenhaDigitado)
+}
+
 
 /* ============================================================================ */
 /* ============================================================================ */
