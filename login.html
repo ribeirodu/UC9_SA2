@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="container-grid posicionamento-header">
-            <a href=""><img class="logo" src="img/Fantasy_Logo_Branco-com-Sombra 1.png" alt="Logo do Site"></a>
+            <a href="index.html"><img class="logo" src="img/Fantasy_Logo_Branco-com-Sombra 1.png" alt="Logo do Site"></a>
             
             <nav id="menu" class="menu">
                 <a href="index.html">Home</a>
@@ -22,12 +22,12 @@
                 <a href="">Suporte</a>
                 <a href="login.html">Minha Conta</a>
                 <a href=""><img src="img/lupa.png" alt="Pesquisa" onclick="mostraBusca()"></a>
-                <div id="busca">
+                <!-- <div id="busca">
                     <form class="busca" action="">
                         <input id="busca-entrada" type="text" placeholder="O que você está procurando?">
                         <button onclick="busca()">Procurar</button>
                     </form>
-                </div>
+                </div> -->
             </nav>
             <a href="#" id="barras"><img class="barras" src="img/menu_icon.svg" alt="Menu de Barras"></a>
         </div>
@@ -42,26 +42,27 @@
     </div>
     <section id="log" class="log">
         <div class="conteudo-log container">
-            <!-- <div class="row"> -->
-                <div class="login col-md-6">
+            <div class="row">
+                <div class="login col-md-12">
                     <h4>Login</h4>
                         <form class="form-login" action="">
                             <input id="log-email" type="email" placeholder="E-mail" required>
                             <input id="log-senha" type="text" placeholder="Senha" required>
                             <br>
+                            <p><href="">Esqueci minha senha</href></p>
                             <button class="log-button" onclick="enviarLogin()">Entrar</button>
                         </form>
                 </div>
-                <div class="login col-md-6">
+                <div class="login col-md-12">
                     <h4>Ainda não tem conta? Cadastre-se aqui!</h4>
                         <form class="form-cadastrar" action="">
-                            <input id="cad-email" type="E-mail" placeholder="E-mail" required>
+                            <input id="cad-email" type="email" placeholder="E-mail" required>
                             <input id="cad-senha" type="text" placeholder="Senha" required>
                             <br>
                             <button class="log-cadastro-button" onclick="enviarCadastrar()">Criar conta</button>
                         </form>
                 </div>
-            <!-- </div> -->
+            </div>
         </div>
     </section>
 
@@ -78,6 +79,12 @@
                     <li><p class="footerLink"><a href="">Nossos Parceiros</a></p></li>
                     <li><p class="footerLink"><a href="">Trabalhe conosco</a></p></li>
                 </ul>
+                <p><b>Newsletter<br></b></p>
+                <form class="newsletter" action="">
+                    <input id="campo-email" type="email" placeholder="E-mail" required>
+                    <button onclick="enviarNewsletter()">Cadastrar</button><br>
+                    <p></p>
+                </form>
             </div>
             <div class="footer-texto2 col-md-3">
                 <p><b>Jogos</b></p>
@@ -92,19 +99,20 @@
             <div class="footer-texto3 col-md-3">
                 <p><b>Midia</b></p>
                 <ul cass="footerLink">
+                    <li><p class="footerLink"><a href="">Tutoriais</a></p></li>
                     <li><p class="footerLink"><a href="">Wallpapers</a></p></li>
                     <li><p class="footerLink"><a href="">Videos</a></p></li>
                     <li><p class="footerLink"><a href="">Eventos</a></p></li>
                     <li><p class="footerLink"><a href="">Imprensa</a></p></li>
                 </ul>
-                <p><b>Newsletter<br></b></p>
+                <!-- <p><b>Newsletter<br></b></p>
                 <form class="newsletter" action="">
                     <input id="campo-email" type="email" placeholder="E-mail" required>
                     <button onclick="enviarNewsletter()">Cadastrar</button>
-                </form>
+                </form> -->
             </div>
             <div class="footer-social col-md-3">
-                <a href="http://www.facebook.com"><img class="fbBox" src="img/social_media/facebook_box.png"></a>
+                <a href="http://www.facebook.com"><img class="fbBox" src="img/social_media/facebook_box.png"></a><br>
                 <a href="http://www.instagram.com"><img class="socialIcon" src="img/social_media/instagram.png"></a>
                 <a href="http://www.twitter.com"><img class="socialIcon" src="img/social_media/twitter.png"></a>
                 <a href="http://www.youtube.com"><img class="socialIcon" src="img/social_media/youtube.png"></a>
