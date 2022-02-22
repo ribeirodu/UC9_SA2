@@ -72,14 +72,14 @@ function enviarNewsletter(){
     console.log(emailDigitado)
 }
 
-// function enviarLogin(){
-//     let logEmail = document.getElementById("campo-log-email");
-//     let logEmailDigitado = logEmail.value;
-//     console.log(logEmailDigitado)
-//     let logSenha = document.getElementById("campo-log-senha");
-//     let logEmailDigitado = logSenha.value;
-//     console.log(logEmailDigitado)
-// }
+function enviarLogin(){
+    let logEmail = document.getElementById("campo-log-email");
+    let logEmailDigitado = logEmail.value;
+    console.log(logEmailDigitado)
+    let logSenha = document.getElementById("campo-log-senha");
+    let logEmailDigitado = logSenha.value;
+    console.log(logEmailDigitado)
+}
 
 function enviarCadastrar(){
     let cadEmail = document.getElementById("campo-cad-email");
